@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header> 
+  <div class="logo">QunnorQuarantine</div>
+
+  <nav>
+    <ul class="nav-center">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+    <ul class="nav-right">
+      <li><a href="#contact">Contact</a></li>
+      <li class="toggle-container">
+      <img src="/moon.png" alt="Night mode" class="icon">
+      <button id="ToggleButton"></button>
+  </li>
+</ul>
+
+  </nav>
+  
+</header>
+<!-- HEADER -->
+<main>
+<!-- HOME SECTION -->
+<section id="home">
+  <div class="home-content">
+    <h1>Hi, I'm QunnorQuarantine</h1>
+    <p>Front-End Developer passionate about building interactive, modern websites.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+<!-- HOME SECTION -->
+
+<!-- ABOUT SECTION -->
+ <section id="about">
+  <div class="about-container">
+    <div class="about-block">
+      <h2>My Background</h2>
+      <p>I started learning web development to create interactive websites and improve my coding skills.</p>
+    </div>
+    <div class="about-block">
+      <h2>My Skills</h2>
+      <p>I focus on HTML, CSS, and JavaScript, building responsive and modern front-end projects.</p>
+    </div>
+    <div class="about-block">
+      <h2>My Goals</h2>
+      <p>I aim to become a professional front-end developer and create clean, user-friendly websites.</p>
+    </div>
+  </div>
+</section>
+<!-- ABOUT SECTION -->
+
+<!-- PROJECTS SECTION -->
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="portfolio.png" alt="Project 1">
+      <h3>Portfolio Website</h3>
+      <p>A modern and responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+    </div>
+
+
+
+    <div class="project-card">
+      <img src="calculator.png" alt="Project 3">
+      <h3>Web Calculator</h3>
+      <p>A simple app without using JavaScript.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+
+<!-- CONTACT MODAL -->
+<div class="modal" id="contact-modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal">&times;</span>
+    <h2>Contact Me</h2>
+    <p>Gmail: egor20011995@gmail.com</p>
+    <p>Telegram: @o0o00ooooo0o</p>
+  </div>
+</div>
+</main>
+
+<script>
+  // Dark mode
+const switcher = document.getElementById("ToggleButton");
+switcher.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Modal logic
+const contactBtn = document.querySelector('a[href="#contact"]');
+const modal = document.getElementById("contact-modal");
+const closeModal = document.getElementById("close-modal");
+
+contactBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  modal.classList.add("show");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("show");
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("show");
+  }
+});
+
+
+</script>
+
+<footer class="footer">
+  <div class="footer_end">
+  <h2>Made by Egor</h2>
+  <p>11.19.2025</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
