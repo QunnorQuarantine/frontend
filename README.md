@@ -5,12 +5,6 @@ Here you can find my personal projects built with HTML, CSS and JavaScript.
 
 ---
 
-## 🚀 Live Demo
-
-- **Landing Page:** https://qunnorquarantine.github.io/frontend/
-
----
-
 ## 📁 Projects
 
 ### Landing Page
