@@ -14,8 +14,9 @@ Welcome to my portfolio! Here you can see my projects as a Front-End Developer.
 
 ### Landing Page
 A modern responsive personal portfolio built with HTML, CSS, and JavaScript.  
-➡️ **Live:** https://qunnorquarantine.github.io/frontend/  
-➡️ **Source:** ./index.html
+➡️ **Source:** [index.html](./index.html)
+➡️ **Source:** [Calculator](./Calculator/)
+
 
 ---
 
