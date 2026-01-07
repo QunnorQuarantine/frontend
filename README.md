@@ -2,15 +2,28 @@
 
 Welcome to my portfolio! Here you can see my projects as a Front-End Developer.
 
-## Projects
+---
+
+## 🚀 Live Demo
+
+- **Landing Page:** https://qunnorquarantine.github.io/frontend/
+
+---
+
+## 📁 Projects
 
 ### Landing Page
 A modern responsive personal portfolio built with HTML, CSS, and JavaScript.  
-[View Landing Page](https://qunnorquarantine.github.io/frontend/
+➡️ **Live:** https://qunnorquarantine.github.io/frontend/  
+➡️ **Source:** ./index.html
+
+---
 
 ### Web Calculator
 A simple and stylish web calculator built with HTML, CSS, and JavaScript.  
-[View Project](Calculator)
+➡️ **Source:** ./Calculator/
 
-## Author
+---
+
+## 👤 Author
 Egor, 2025
