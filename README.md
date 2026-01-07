@@ -1,6 +1,7 @@
-# My Portfolio
+# My Frontend Portfolio
 
-Welcome to my portfolio! Here you can see my projects as a Front-End Developer.
+Welcome to my frontend portfolio.  
+Here you can find my personal projects built with HTML, CSS and JavaScript.
 
 ---
 
@@ -13,18 +14,19 @@ Welcome to my portfolio! Here you can see my projects as a Front-End Developer.
 ## 📁 Projects
 
 ### Landing Page
-A modern responsive personal portfolio built with HTML, CSS, and JavaScript.  
-➡️ **Source:** [index.html](./index.html)
-➡️ **Source:** [Calculator](./Calculator/)
-
+Modern responsive personal portfolio website with dark mode and modal contact form.  
+➡️ **Live:** https://qunnorquarantine.github.io/frontend/  
+➡️ **Details:** [Open Landing README](./Landing/README.md)  
+➡️ **Source:** [Open folder](./Landing/)
 
 ---
 
 ### Web Calculator
-A simple and stylish web calculator built with HTML, CSS, and JavaScript.  
-➡️ **Source:** ./Calculator/
+A simple and stylish web calculator built with HTML and CSS.  
+➡️ **Source:** [Open folder](./Calculator/)
 
 ---
 
 ## 👤 Author
-Egor, 2025
+
+Egor, 2025  
