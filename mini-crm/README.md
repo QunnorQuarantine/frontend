@@ -1,67 +1,50 @@
-Mini CRM
+# Mini CRM
 
-Simple task-based CRM built with React and TypeScript.
+> Simple task-based CRM built with **React** and **TypeScript**.
 
-Features
+---
 
-Authentication (client-side)
+## ✨ Features
 
-Roles: admin / user
+### 🔐 Authentication (Client-side)
+- Authentication is handled on the client side.
 
-Task CRUD (admin only)
+### 👥 Roles: `admin` / `user`
+- **user** — read-only access
+- **admin** — full access *(create / edit / delete tasks)*
 
-Task list with:
+### ✅ Task CRUD (admin only)
+- Create tasks
+- Edit tasks
+- Delete tasks
 
-search
+### 📋 Task list with
+- **search**
+- **status filter**
+- **pagination**
 
-status filter
+### 🪟 Modal for create/edit tasks
+- Task creation/editing is done via a modal.
 
-pagination
+### 🛡️ Role-based UI restrictions
+- UI changes depending on the role (admin/user).
 
-Modal for create/edit tasks
+---
 
-Role-based UI restrictions
+## 🧱 Tech Stack
 
-Tech Stack
+- **React**
+- **TypeScript**
+- **Vite**
+- **Context API**
+- **Hooks**
+- **ESLint**
 
-React
+---
 
-TypeScript
+## 🚀 How to try
 
-Vite
-
-Context API
-
-Hooks
-
-ESLint
-
-How to try
-
-Clone the repository
-
-Install dependencies:
-
-npm install
-
-
-Run the project:
-
-npm run dev
-
-
-On the login screen:
-
-Login as User — read-only access
-
-Login as Admin — full access (create / edit / delete tasks)
-
-Architecture
-
-Feature-based structure:
-
-entities — business logic and types
-
-features — UI features
-
-app — app setup and providers
+### 1) Clone the repository
+```bash
+git clone <YOUR_REPO_URL>
+cd mini-crm
