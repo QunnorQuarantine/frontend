@@ -19,6 +19,32 @@ A simple and stylish web calculator built with HTML and CSS.
 
 ---
 
+### Mini CRM
+Simple task-based CRM built with **React** and **TypeScript**.
+
+
+**Highlights**
+- 🔐 Authentication (Client-side)
+- 👥 Roles: **admin / user**
+- **user** — read-only access
+- **admin** — full access *(create / edit / delete tasks)*
+- ✅ Task CRUD *(admin only)*
+- 📋 Task list with **search**, **status filter**, **pagination**
+- 🪟 Modal for **create/edit** tasks
+- 🛡️ Role-based UI restrictions
+
+
+**Tech Stack**
+- React
+- TypeScript
+- Vite
+- Context API
+- Hooks
+- ESLint
+
+
+➡️ **Source:** [Open folder](./mini-crm/)
+
 ## 👤 Author
 
 Egor, 2025  
