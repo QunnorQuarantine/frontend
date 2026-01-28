@@ -29,7 +29,7 @@ export function TaskModal({ isOpen, onClose, onSave, initial }: Props) {
   async function handleSubmit(e?: React.FormEvent) {
     e?.preventDefault();
     if (!title.trim()) {
-      alert('Название обязательно');
+      alert('Title is required');
       return;
     }
     setSaving(true);
@@ -47,15 +47,17 @@ export function TaskModal({ isOpen, onClose, onSave, initial }: Props) {
       background: 'rgba(0,0,0,0.3)'
     }}>
       <form onSubmit={handleSubmit} style={{ background: '#fff', padding: 20, minWidth: 320, borderRadius: 8 }}>
-        <h3 style={{ marginTop: 0 }}>{initial ? 'Редактировать задачу' : 'Создать задачу'}</h3>
+        <h3 style={{ marginTop: 0 }}>
+          {initial ? 'Edit Task' : 'Create Task'}
+        </h3>
 
         <div style={{ marginBottom: 10 }}>
-          <label style={{ display: 'block' }}>Название</label>
+          <label style={{ display: 'block' }}>Title</label>
           <input value={title} onChange={e => setTitle(e.target.value)} style={{ width: '100%' }} />
         </div>
 
         <div style={{ marginBottom: 10 }}>
-          <label style={{ display: 'block' }}>Статус</label>
+          <label style={{ display: 'block' }}>Status</label>
           <select value={status} onChange={e => setStatus(e.target.value as Task['status'])}>
             <option value="todo">todo</option>
             <option value="in_progress">in_progress</option>
@@ -65,7 +67,9 @@ export function TaskModal({ isOpen, onClose, onSave, initial }: Props) {
 
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
           <button type="button" onClick={onClose} disabled={saving}>Cancel</button>
-          <button type="submit" disabled={saving}>{saving ? 'Saving...' : 'Save'}</button>
+          <button type="submit" disabled={saving}>
+            {saving ? 'Saving...' : 'Save'}
+          </button>
         </div>
       </form>
     </div>

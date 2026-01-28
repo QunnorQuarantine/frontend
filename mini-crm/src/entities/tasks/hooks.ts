@@ -40,6 +40,6 @@ export function useTasks() {
     createTask,
     updateTask,
     deleteTask,
-    setTasks // полезно для быстрой инициализации/тестов
+    setTasks
   };
 }

@@ -1,21 +1,21 @@
-import type {  Task } from './types';
+import type { Task } from './types';
 
 export const mockTasks: Task[] = [
   {
     id: '1',
-    title: 'Сверстать таблицу задач',
+    title: 'Build tasks table layout',
     status: 'todo',
     createdAt: Date.now(),
   },
   {
     id: '2',
-    title: 'Добавить фильтры',
+    title: 'Add filters',
     status: 'in_progress',
     createdAt: Date.now(),
   },
   {
     id: '3',
-    title: 'Подготовиться к собеседованию',
+    title: 'Prepare for job interview',
     status: 'done',
     createdAt: Date.now(),
   },

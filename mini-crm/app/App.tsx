@@ -14,7 +14,7 @@ export function App() {
   const [modalOpen, setModalOpen] = useState(false);
   const [editing, setEditing] = useState<Task | null>(null);
 
-  // Day 3 — фильтры и поиск
+
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'todo' | 'in_progress' | 'done'>('all');
 
@@ -25,7 +25,7 @@ export function App() {
     );
   }, [tasks, search, statusFilter]);
 
-  // Day 3 — пагинация
+
   const [page, setPage] = useState(1);
   const tasksPerPage = 5;
   const paginatedTasks = useMemo(() => {
@@ -33,7 +33,7 @@ export function App() {
     return filteredTasks.slice(start, start + tasksPerPage);
   }, [filteredTasks, page]);
 
-  // Модалка
+
   const openCreate = () => {
     setEditing(null);
     setModalOpen(true);
@@ -44,7 +44,6 @@ export function App() {
   };
   const handleSave = async (payload: { id?: string; title: string; status: Task['status'] }) => {
   if (payload.id) {
-    // строго типизируем для update
     await updateTask({ 
       id: payload.id, 
       title: payload.title, 
@@ -71,7 +70,7 @@ export function App() {
       <h1>Mini CRM — Tasks ({role})</h1>
       <button onClick={logout} style={{ marginBottom: 12 }}>Logout</button>
 
-      {/* Фильтры и поиск */}
+   
       <div style={{ marginBottom: 12 }}>
         <input
           type="text"
@@ -88,7 +87,7 @@ export function App() {
         </select>
       </div>
 
-      {/* Create button только для admin */}
+      
       {role === 'admin' && (
         <div style={{ marginBottom: 12 }}>
           <button onClick={openCreate}>Create Task</button>
@@ -105,7 +104,7 @@ export function App() {
 />
       )}
 
-      {/* Пагинация */}
+
       <div style={{ marginTop: 12 }}>
         <button disabled={page === 1} onClick={() => setPage(p => p - 1)}>Prev</button>
         <span style={{ margin: '0 8px' }}>{page}</span>

@@ -16,15 +16,15 @@ export function TaskList({
   onEdit,
   onDelete,
 }: Props) {
-  if (!tasks || tasks.length === 0) return <p>Задач нет</p>;
+  if (!tasks || tasks.length === 0) return <p>No tasks available</p>;
 
   return (
     <table style={{ width: '100%', borderCollapse: 'collapse' }}>
       <thead>
         <tr>
-          <th style={{ textAlign: 'left', padding: 8 }}>Название</th>
-          <th style={{ textAlign: 'left', padding: 8 }}>Статус</th>
-          <th style={{ padding: 8 }}>Действия</th>
+          <th style={{ textAlign: 'left', padding: 8 }}>Title</th>
+          <th style={{ textAlign: 'left', padding: 8 }}>Status</th>
+          <th style={{ padding: 8 }}>Actions</th>
         </tr>
       </thead>
 
@@ -44,7 +44,7 @@ export function TaskList({
               {canDelete && (
                 <button
                   onClick={() => {
-                    if (confirm('Удалить задачу?')) onDelete(task.id);
+                    if (confirm('Delete this task?')) onDelete(task.id);
                   }}
                 >
                   Delete
